@@ -4,8 +4,8 @@ An interactive quantitative finance dashboard that implements the landmark Carr-
 
 ---
 
-## 📌 Project Overview
-This repository contains a full computational implementation developed for the project **Algorithmic Option Pricing: Bridging Stochastic Calculus and Fourier Transforms** under **Stamatics Society, IIT Kanpur**.
+## Project Overview
+This repository contains a full computational implementation developed for the project **Algorithmic Option Pricing: Bridging Stochastic Calculus and Fourier Transforms** under **Stamatics , IIT Kanpur**.
 
 The main objective of this project was to explore how shifting option pricing problems from the time domain into the frequency domain allows for the simultaneous calculation of an entire chain of option strikes with remarkable speed ($O(N \log N)$ complexity).
 
@@ -18,7 +18,7 @@ The main objective of this project was to explore how shifting option pricing pr
 
 ---
 
-## 📌 Mathematical Architecture
+##  Mathematical Architecture
 
 Traditional option pricing requires integrating a complex Probability Density Function (PDF). Under advanced models like Variance Gamma, the PDF is non-analytical, but its **Characteristic Function** ($\phi_T(u)$) is simple and explicit.
 
@@ -37,7 +37,7 @@ $$\lambda\eta = \frac{2\pi}{N}$$
 
 ---
 
-## 📌 Tech Stack & Dependencies
+## Tech Stack & Dependencies
 
 * **Language:** Python 3.8+
 * **Core Numerics:** NumPy, SciPy (specifically `scipy.fft.fft` and `scipy.stats.norm`)
@@ -49,19 +49,19 @@ To install dependencies, run:
 pip install streamlit numpy pandas scipy
 ```
 
-## 📌 How to Run the Web Application
+## How to Run the Web Application
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/<your-username>/Option-Pricing-Using-Fast-Fourier-Transform-FFT-.git
-   cd Option-Pricing-Using-Fast-Fourier-Transform-FFT-
+   git clone https://github.com/divyaprakash1845/Algorithmic-Options-Pricing-Fourier-Transform
+   cd Algorithmic-Options-Pricing-Fourier-Transform
    ```
 2. Launch the local Streamlit server:
    ```bash
    streamlit run Pricing_Engine.py
    ```
 3. Open your browser to the local URL (usually `http://localhost:8501`) to interact with the parameters.
-## 📌 Sample Insights & Experimentation
+## Sample Insights & Experimentation
 
 By adjusting the **Kurtosis ($\nu$)** and **Skewness ($\theta$)** sliders in the sidebar, you can instantly see how the Variance Gamma model handles non-normal asset return profiles:
 * Setting $\nu \to 0$ and $\theta \to 0$ aligns the pricing engine back toward log-normal behaviors.
